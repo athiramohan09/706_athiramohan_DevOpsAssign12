@@ -1,0 +1,15 @@
+- hosts: manager
+  become: yes
+  tasks:
+    - name: Initialize swarm (idempotent)
+      shell: |
+        docker swarm init --advertise-addr {{ ansible_host }} || true
+      args:
+        warn: false
+
+- hosts: workers
+  become: yes
+  tasks:
+    - name: Join swarm (placeholder command)
+      debug:
+        msg: "Run docker swarm join --token <token> <manager-ip>:2377 on worker to join manager"

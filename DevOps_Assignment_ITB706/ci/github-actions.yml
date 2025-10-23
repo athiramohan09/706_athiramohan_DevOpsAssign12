@@ -1,0 +1,14 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches: ['**']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build placeholder
+        run: echo "Build step placeholder for ITB719"
+      - name: Deploy placeholder
+        run: echo "Deploy step placeholder (Ansible/Swarm)"

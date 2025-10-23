@@ -1,0 +1,14 @@
+- hosts: manager
+  become: yes
+  tasks:
+    - name: Create app dir
+      file:
+        path: /home/ubuntu/app
+        state: directory
+        owner: ubuntu
+        mode: '0755'
+
+    - name: Copy stack file (placeholder)
+      copy:
+        src: ../../docker/docker-compose.yml
+        dest: /home/ubuntu/app/docker-compose.yml

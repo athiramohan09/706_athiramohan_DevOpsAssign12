@@ -1,0 +1,7 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Hello {{ username }} How are you</h1>
+    <form method="post" action="/logout/">{% csrf_token %}<button type="submit">Logout</button></form>
+  </body>
+</html>

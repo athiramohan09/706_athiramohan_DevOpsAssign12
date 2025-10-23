@@ -1,0 +1,18 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Install apt packages and Docker
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - docker.io
+        state: present
+        update_cache: yes
+    - name: Ensure docker service started
+      service:
+        name: docker
+        state: started
+        enabled: yes
