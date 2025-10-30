@@ -4,14 +4,14 @@ This repository is a complete submission for the assignment:
 **Design and Provision of a Multi-Server Django–PostgreSQL Application on AWS using Terraform and Ansible**,
 and **Automation of Container Orchestration and CI/CD Deployment using Docker Swarm, Docker Compose, and GitHub Actions/Jenkins**.
 
-> Branch name for submission: `ITB719`
+> Branch name for submission: `ITB706`
 
 This package contains template code and a full functional Django app (login/register/home/logout)
 wired to a `login` table in PostgreSQL. The repo is intended for submission only (no infra will be provisioned here).
 
 ## Layout
 ```
-DevOps_Assignment_ITB719/
+DevOps_Assignment_ITB706/
 ├─ terraform/
 ├─ ansible/
 │  ├─ playbooks/
