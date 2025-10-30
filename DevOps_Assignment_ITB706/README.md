@@ -1,4 +1,4 @@
-# DevOps_Assignment_ITB719
+# DevOps_Assignment_ITB706
 
 This repository is a complete submission for the assignment:
 **Design and Provision of a Multi-Server Django–PostgreSQL Application on AWS using Terraform and Ansible**,
